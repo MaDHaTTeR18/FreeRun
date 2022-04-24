@@ -24,13 +24,12 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	FVector StartPosition;
-	//UPROPERTY(EditAnywhere,Category="Movement")
 
 	UPROPERTY(EditAnywhere,Category="Movement")
 	FVector CurrentPosition;
 	UPROPERTY(EditAnywhere,Category="Movement")
 	FVector PlatformVelocity= FVector(100,0,0);
 	UPROPERTY(EditAnywhere,Category="Movement")
-	float MoveDistance;
+	float MoveDistance=1000;
 
 };

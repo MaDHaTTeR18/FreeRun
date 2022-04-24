@@ -23,6 +23,7 @@ void AMovingPlatform::BeginPlay()
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
 	CurrentPosition = CurrentPosition+(PlatformVelocity * DeltaTime);
 	SetActorLocation(CurrentPosition);
 	float DistanceMoved = FVector::Dist(StartPosition,CurrentPosition);
