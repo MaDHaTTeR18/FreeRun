@@ -31,7 +31,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 	{
 		StartPosition = StartPosition+(PlatformVelocity.GetSafeNormal())*MoveDistance;
 		SetActorLocation(StartPosition);
-		PlatformVelocity=- PlatformVelocity;
+		PlatformVelocity = - PlatformVelocity;
 	}
 
 }
